@@ -8,17 +8,3 @@
   background: linear-gradient(227deg, rgba(220, 92, 124, 1) 0%, rgba(218, 65, 103, 1) 100%)!important;
   color: white!important;
 }
-body{
-  margin: 0px;
-}
-#a1{
-  color: white;
-  text-decoration: none;
-
-}
-nav {
-  display: flex;
-  background-color: #49297c;
-  padding: 8px 0px 0px 20px;
-  justify-content: space-between;
-}
