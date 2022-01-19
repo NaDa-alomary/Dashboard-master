@@ -17,20 +17,30 @@
         <div>
             <nav class="navbar navbar-expand-lg navbar-dark bg-purple">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#" id="a1" href="index.html">Nrt Solution</a>
+                  <a class="navbar-brand mx-3" href="#" id="a1" href="index.html">Nrt Solution</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <button class="btn btn-primary bg-purple" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"
-                    style="margin-left:60px; border: none;"><i class="fas fa-bars"></i></button>
+                    <button class="btn btn-primary bg-purple mx-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"
+                    style= "border:none;"><i class="fas fa-bars"></i></button>
                     <!------>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0"> </ul>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0"> </ul> <!--Can you explain what is this doing>-->
                     <!------>
                     <form class="d-flex">
                       <input class="form-control me-2" type="search" placeholder="Search for..." aria-label="Search">
                       <button class="btn btn-outline-success bg-pink" type="submit"><i class="fas fa-search"></i></button>
                     </form>
+                    <!--<li class="nav-item dropdown"></li>-->  
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <!---whay the menu doesn't be in the right?-->
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
                   </div>
                 </div>
               </nav>
@@ -57,6 +67,56 @@
             
             <main>
                 <!-- Reports Cards -->
+                <h1 class="mx-4 m-3">Dashboard</h1>
+                <h6 class="mx-4">Dashboard</h6>
+                <div class="container my-5">                        
+                    <div class="row align-items-center">
+                        <div class="col-3 m-3">
+                            <div class="card bg-pink" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h5 class="card-title">Sales</h5>
+                                  <p class="card-text">...</p>
+                                </div> 
+                                <div class="card-footer">
+                                    <a href="#">View Details</a>
+                                </div>                               
+                            </div>
+                        </div>
+                        <div class="col-3 m-3">
+                            <div class="card bg-pink" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h5 class="card-title">Orders</h5>
+                                  <p class="card-text">...</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#">View Details</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-3 m-3">
+                            <div class="card bg-pink" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h5 class="card-title">Visitors</h5>
+                                  <p class="card-text">...</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#">View Details</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-3 m-3">
+                            <div class="card bg-pink" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h5 class="card-title">Conversion Rate</h5>
+                                  <p class="card-text">...</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#">View Details</a>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                </div>
                 <!-- Reports Chart -->
                 <!-- Customers Table -->
             </main>
