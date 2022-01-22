@@ -10,6 +10,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
 </head>
 
 <body>
@@ -18,25 +22,23 @@
         <div>
             <nav class="navbar navbar-expand-lg navbar-dark bg-purple">
                 <div class="container-fluid">
+                  <!-- Navbar Brand-->
                   <a class="navbar-brand mx-3" href="#" id="a1" href="index.html">Nrt Solution</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
+                  <!-- Sidebar Toggle Icon-->
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <button class="btn btn-primary bg-purple mx-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"
                     style= "border:none;"><i class="fas fa-bars"></i></button>
-                    <!------>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0"> </ul> <!--Can you explain what is this doing>-->
-                    <!------>
+                    
+                    <!-- Navbar Search-->
                     <form class="input-group flex-nowrap">
                         <input type="text" class="form-control" placeholder="Search for..." aria-label="Search" aria-describedby="addon-wrapping">
                         <span class="input-group-text bg-pink" id="addon-wrapping"><i class="fas fa-search"></i></span>
                     </form>
-                    <!--<li class="nav-item dropdown"></li>-->  
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <!-- User Profile-->
+                    <a class="nav-link dropdown-toggle dropdown-menu-right" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fas fa-user"></i>
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <!---whay the menu doesn't be in the right?-->
+                    <ul class="dropdown-menu " aria-labelledby="navbarDropdown"> <!---whay the menu doesn't be in the right?-->
                       <li><a class="dropdown-item" href="#">Action</a></li>
                       <li><a class="dropdown-item" href="#">Another action</a></li>
                       <li><hr class="dropdown-divider"></li>
@@ -45,141 +47,151 @@
                   </div>
                 </div>
               </nav>
-        <!-- Navbar Brand-->
-        <!-- Sidebar Toggle Icon-->
-        <!-- Navbar Search-->
-        <!-- User Profile-->
     </nav>
     
     <!-- Sidebar -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+    <div class="offcanvas offcanvas-start bg-purple " tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Offcanvas with backdrop</h5>
+          <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Nrt Solution</h5>
         </div>
         <div class="offcanvas-body">
-          <p>.....</p>
+          <div class="my-3 mt-0"><a href="./index.html"><i class="fas fa-home"></i>  Home</a></div>
+          <div class="my-3"><a href="./products.html"><i class="fas fa-home"></i>  Products</a></div>
+          <div class="my-3"><a href="#"><i class="fas fa-border-all"></i>  Orders</a></div>
+          <div class="my-3"><a href="#"><i class="fas fa-chart-area"></i>  Reports</a></div>
+          <div class="my-3"><a href="#"><i class="fas fa-users"></i>  Customers</a></div>
         </div>
       </div>
     
-    </div>
-    
         <!-- The Main Content -->
-        <div>
-            
-            <main>
-                <!-- Reports Cards -->
-                <h1 class="mx-4 m-3">Dashboard</h1>
-                <h6 class="mx-4">Dashboard</h6>
-                <div class="container my-5">                        
-                    <div class="row p-2">
-                        <div class="col-3 ">
-                            <div class="card bg-pink">
-                                <div class="card-body">
-                                  <h5 class="card-title text-center">Sales</h5>
-                                  <p class="card-text text-center">3450.00 SAR</p>
-                                </div> 
-                                <div class="card-footer">
-                                    <a href="#">View Details</a><i class="fas fa-chevron-right mx-5"></i>
-                                </div>                               
+    <div>   
+        <main>
+            <!-- Reports Cards -->
+            <h1 class="mx-4 m-3">Dashboard</h1>
+            <h6 class="mx-4 text-muted">Dashboard</h6>
+            <div class="container my-5">                        
+                <div class="row p-2">
+                    <div class="col-3 ">
+                        <div class="card bg-pink">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">Sales</h5>
+                              <p class="card-text text-center">3450.00 SAR</p>
+                            </div> 
+                            <div class="card-footer">
+                                <a href="#">View Details</a><i class="fas fa-chevron-right mx-5"></i>
+                            </div>                               
+                        </div>
+                    </div>
+                    <div class="col-3 ">
+                        <div class="card bg-pink">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">Orders</h5>
+                              <p class="card-text text-center">1890</p>
                             </div>
-                        </div>
-                        <div class="col-3 ">
-                            <div class="card bg-pink">
-                                <div class="card-body">
-                                  <h5 class="card-title text-center">Orders</h5>
-                                  <p class="card-text text-center">1890</p>
-                                </div>
-                                <div class="card-footer">
-                                    <a href="#">View Details</a><i class="fas fa-chevron-right mx-5"></i>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card bg-pink" >
-                                <div class="card-body">
-                                  <h5 class="card-title text-center">Visitors</h5>
-                                  <p class="card-text text-center">352</p>
-                                </div>
-                                <div class="card-footer">
-                                    <a href="#">View Details</a><i class="fas fa-chevron-right mx-5"></i>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-3 ">
-                            <div class="card bg-pink">
-                                <div class="card-body">
-                                  <h5 class="card-title text-center">Conversion Rate</h5>
-                                  <p class="card-text text-center">3.75%</p>
-                                </div>
-                                <div class="card-footer">
-                                    <a href="#">View Details</a><i class="fas fa-chevron-right mx-5"></i>
-                                </div>
-                              </div>
+                            <div class="card-footer">
+                                <a href="#">View Details</a><i class="fas fa-chevron-right mx-5"></i>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-pink" >
+                            <div class="card-body">
+                              <h5 class="card-title text-center">Visitors</h5>
+                              <p class="card-text text-center">352</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#">View Details</a><i class="fas fa-chevron-right mx-5"></i>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-3 ">
+                        <div class="card bg-pink">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">Conversion Rate</h5>
+                              <p class="card-text text-center">3.75%</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#">View Details</a><i class="fas fa-chevron-right mx-5"></i>
+                            </div>
                           </div>
                       </div>
+                  </div>
+            </div>
+            <!-- Reports Chart -->
+            <div class="container">
+                <div class="row ">
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fas fa-border-all"></i> Orders
+                            </div>
+                            <div class="card-body">
+                              <blockquote class="blockquote mb-0">
+                                <canvas id="myAreaChart" width="400" height="200"></canvas>
+                              </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fas fa-eye"></i> Visitor
+                            </div>
+                            <div class="card-body">
+                              <blockquote class="blockquote mb-0">
+                                <canvas id="myBarChart" width="400" height="200"></canvas>
+                              </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                                            
                 </div>
-                <!-- Reports Chart -->
-                    <div class="row ">
-                        <div class="col-6">
-                            <div class="card">
-                                <div class="card-header">
-                                    <i class="fas fa-border-all"></i> Orders
-                                </div>
-                                <div class="card-body">
-                                  <blockquote class="blockquote mb-0">
-                                    <canvas id="myAreaChart" width="400" height="200"></canvas>
-                                  </blockquote>
-                                </div>
+                <div class="row mt-4">
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker"></i> Visitors Cities
+                            </div>
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <canvas id="myPieChart" width="400" height="200"></canvas>
+                                </blockquote>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div class="card">
-                                <div class="card-header">
-                                    <i class="fas fa-eye"></i> Visitor
-                                </div>
-                                <div class="card-body">
-                                  <blockquote class="blockquote mb-0">
-                                    <canvas id="myBarChart" width="400" height="200"></canvas>
-                                  </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                                                
                     </div>
-                    <div class="row mt-4">
-                        <div class="col-6">
-                            <div class="card">
-                                <div class="card-header">
-                                    <i class="fas fa-map-marker"></i> Visitors Cities
-                                </div>
-                                <div class="card-body">
-                                    <blockquote class="blockquote mb-0">
-                                        <canvas id="myPieChart" width="400" height="200"></canvas>
-                                    </blockquote>
-                                </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fas fa-star"></i> Customers Rate
+                            </div>
+                            <div class="card-body">
+                              <blockquote class="blockquote mb-0">
+                                <canvas id="myLinearChart" width="400" height="200"></canvas>
+                              </blockquote>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div class="card">
-                                <div class="card-header">
-                                    <i class="fas fa-star"></i> Customers Rate
-                                </div>
-                                <div class="card-body">
-                                  <blockquote class="blockquote mb-0">
-                                    <canvas id="myLinearChart" width="400" height="200"></canvas>
-                                  </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                                                
                     </div>
-                <!-- Customers Table -->
-            </main>
-            
+                                            
+                </div>
+            </div>
             <!-- Customers Table -->
-            <footer>
-            </footer>
-        </div>
+            <div class="container my-5">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fas fa-users"></i>  Customers
+                            </div>
+                            <div class="card-body">
+                              ....
+                            </div>
+                          </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+        </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
