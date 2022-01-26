@@ -3,22 +3,17 @@
 var ordersChart = document.getElementById("myAreaChart");
 const labels1 =['Aug1', 'Aug3', 'Aug5', 'Aug7', 'Aug9', 'Aug11', 'Aug13'];
 new Chart(ordersChart, {
-    type: 'area',
+    type: 'line',
     data: {
         labels: labels1,
         datasets: [{
             label: 0,
-            data: [8000, 30000, 22500, 20000, 28000, 32000, 33000, 30000, 30000, 20000, 36000, 40000],
+            data: [8000, 30000, 22500, 20000, 28000, 32000, 33000],
             fill: false,
             borderColor: '#da4167',
-            tension: 0.4
+            
             }]
-            [{fill: 'origin'},      // 0: fill to 'origin'
-            {fill: '+2'},          // 1: fill to dataset 3
-            {fill: 1},             // 2: fill to dataset 1
-            {fill: false},         // 3: no fill
-            {fill: '-2'},          // 4: fill to dataset 2
-            {fill: {value: 25}}],
+            
         },
         options: {
             scales: {
@@ -101,6 +96,7 @@ var ratChart = document.getElementById("myLinearChart");
 const labels4= ['Junuary', 'February', 'March', 'April', 'May', 'June'];
 const myChart4 = new Chart(ratChart, {
     type: 'line',
+    label: 'rate',
     data: {
         labels: labels4,
         datasets: [{
@@ -112,10 +108,13 @@ const myChart4 = new Chart(ratChart, {
             }]
         },
         options: {
+            
             scales: {
                 y: {
                     beginAtZero: true
                 }
+            }, legend: {
+                display: true
             }
         }
     });

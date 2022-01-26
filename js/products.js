@@ -62,10 +62,10 @@ document.getElementById("proooducts").innerHTML = products.map(element =>
   `
   <div class="container">
      <div id="products">
-         <div class="card">
+         <div class="card my-4">
              <div class="row">
                <div class="col-md-3">
-                  <img src="${element.image}">
+                  <img class="img-fluid" src="${element.image}">
                </div>
                <div class="col-md-6">
                  <h1>${element.name}</h1>
@@ -80,7 +80,7 @@ document.getElementById("proooducts").innerHTML = products.map(element =>
              </div>
          </div>
      </div>
-  /div>
+  </div>
   `
   ).join('')
 
