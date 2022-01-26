@@ -57,33 +57,30 @@ const products = [
   },
 ];
 
-document.getElementById("products").innerHTML = products.map(element =>
+document.getElementById("proooducts").innerHTML = products.map(element =>
+ 
   `
-  <div class="row align-items-center">
-        <div class="col-4">
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="${element.image}" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">${element.name}</h5>
-                      <p class="card-text">${element.description}</p>
-                    </div>
-                    <div class="col-4">
-                    <div class="col-md-8">
-                        <div class="card-body">
-                        <p class="card-text">${element.price}</p>
-                        <p class="card-text">${element.status}</p>
-                        <a href="#" class="btn btn-primary">Details</a>
-                        <a href="#" class="btn btn-primary">Delete</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  <div class="container">
+     <div id="products">
+         <div class="card">
+             <div class="row">
+               <div class="col-md-3">
+                  <img src="${element.image}">
+               </div>
+               <div class="col-md-6">
+                 <h1>${element.name}</h1>
+                 <p>${element.description}</p>
+               </div>
+               <div class="col-md-3">
+                 <h5>${element.price}</h5>
+                 <h5>${element.status}</h5>
+                 <button class="btn bg-purple"> Details</button>
+                 <button class="btn bg-pink">Delete</button>
+               </div>
+             </div>
+         </div>
+     </div>
+  /div>
   `
-  )
+  ).join('')
 
