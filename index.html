@@ -56,71 +56,71 @@
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Nrt Solution</h5>
         </div>
-        <div class="offcanvas-body">
-          <div class="my-3 mt-0"><a href="./index.html"class="text-decoration-none"><i class="fas fa-home"></i>  Home</a></div>
-          <div class="my-3"><a href="./products.html"class="text-decoration-none"><i class="fas fa-home"></i>  Products</a></div>
-          <div class="my-3"><a href="#" class="text-decoration-none"><i class="fas fa-border-all"></i>  Orders</a></div>
-          <div class="my-3"><a href="#" class="text-decoration-none"><i class="fas fa-chart-area"></i>  Reports</a></div>
-          <div class="my-3"><a href="#" class="text-decoration-none"><i class="fas fa-users"></i>  Customers</a></div>
+        <div class="offcanvas-body ">
+          <div class="my-3 mt-0 textShadow"><a href="#home"class="text-decoration-none"><i class="fas fa-home"></i>  Home</a></div>
+          <div class="my-3 textShadow"><a href="./products.html"class="text-decoration-none"><i class="fas fa-home"></i>  Products</a></div>
+          <div class="my-3 textShadow"><a href="#" class="text-decoration-none"><i class="fas fa-border-all"></i>  Orders</a></div>
+          <div class="my-3 textShadow"><a href="#chart" class="text-decoration-none"><i class="fas fa-chart-area"></i>  Reports</a></div>
+          <div class="my-3 textShadow"><a href="#customers" class="text-decoration-none"><i class="fas fa-users"></i>  Customers</a></div>
         </div>
       </div>
     
         <!-- The Main Content -->
     <div>   
-        <main>
+        <main id="home">
             <!-- Reports Cards -->
             <h1 class="mx-4 m-3">Dashboard</h1>
             <h6 class="mx-4 text-muted">Dashboard</h6>
             <div class="container my-5">                        
                 <div class="row p-2">
-                    <div class="col-3 ">
+                    <div class="col-lg-3 col-md-6 col-sm-12 ">
                         <div class="card bg-pink">
                             <div class="card-body">
                               <h5 class="card-title text-center">Sales</h5>
                               <p class="card-text text-center">3450.00 SAR</p>
                             </div> 
                             <div class="card-footer">
-                                <a href="#">View Details</a><i class="fas fa-chevron-right mx-5"></i>
+                                <a class="text-decoration-none link-light" href="#">View Details</a><i class="fas fa-chevron-right mx-5"></i>
                             </div>                               
                         </div>
                     </div>
-                    <div class="col-3 ">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="card bg-pink">
                             <div class="card-body">
                               <h5 class="card-title text-center">Orders</h5>
                               <p class="card-text text-center">1890</p>
                             </div>
                             <div class="card-footer">
-                                <a href="#">View Details</a><i class="fas fa-chevron-right mx-5"></i>
+                                <a class="text-decoration-none link-light" href="#">View Details</a><i class="fas fa-chevron-right mx-5"></i>
                             </div>
                           </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="card bg-pink" >
                             <div class="card-body">
                               <h5 class="card-title text-center">Visitors</h5>
                               <p class="card-text text-center">352</p>
                             </div>
                             <div class="card-footer">
-                                <a href="#">View Details</a><i class="fas fa-chevron-right mx-5"></i>
+                                <a class="text-decoration-none link-light" href="#">View Details</a><i class="fas fa-chevron-right mx-5"></i>
                             </div>
                           </div>
                     </div>
-                    <div class="col-3 ">
+                    <div class="col-lg-3 col-md-6 col-sm-12 ">
                         <div class="card bg-pink">
                             <div class="card-body">
                               <h5 class="card-title text-center">Conversion Rate</h5>
                               <p class="card-text text-center">3.75%</p>
                             </div>
                             <div class="card-footer">
-                                <a href="#">View Details</a><i class="fas fa-chevron-right mx-5"></i>
+                                <a class="text-decoration-none link-light" href="#">View Details</a><i class="fas fa-chevron-right mx-5"></i>
                             </div>
                           </div>
                       </div>
                   </div>
             </div>
             <!-- Reports Chart -->
-            <div class="container">
+            <div class="container" id="chart">
                 <div class="row ">
                     <div class="col-6">
                         <div class="card">
@@ -177,7 +177,7 @@
                 </div>
             </div>
             <!-- Customers Table -->
-            <div class="container my-5">
+            <div class="container my-5" id="customers">
                 <div class="row align-items-center">
                     <div class="col-12">
                         <div class="card">
@@ -205,7 +205,7 @@
         </main>
         
         <footer>
-
+            
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
